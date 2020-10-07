@@ -1,9 +1,11 @@
-package com.forte.utils;
+package com.github.cassiofelippe;
 
 import static org.junit.Assert.assertEquals;
 
 import org.bson.Document;
 import org.junit.Test;
+
+import com.github.cassiofelippe.JsonHelper;
 
 public class JsonHelperTest {
 

@@ -1,4 +1,4 @@
-package com.forte.utils;
+package com.github.cassiofelippe;
 
 import static java.time.LocalDateTime.now;
 import static java.time.LocalDateTime.of;
@@ -9,6 +9,8 @@ import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 
 import org.junit.Test;
+
+import com.github.cassiofelippe.FieldHelper;
 
 public class FieldHelperTest {
 

@@ -1,4 +1,4 @@
-package com.forte.utils;
+package com.github.cassiofelippe;
 
 import java.io.IOException;
 import java.net.URI;

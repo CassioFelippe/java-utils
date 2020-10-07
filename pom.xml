@@ -5,11 +5,15 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.forte.utils</groupId>
+	<groupId>com.github.cassiofelippe</groupId>
 	<artifactId>java-utils</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 
 	<name>java-utils</name>
+	<description>
+		Rely on this project to have helpful classes to basic operations,
+		without having to write your own basic logics over and over again. 
+	</description>
 	<url>https://github.com/CassioFelippe/java-utils</url>
 
 	<properties>
@@ -19,6 +23,26 @@
 		<skipTests>false</skipTests>
 	</properties>
 
+	<scm>
+		<url>https://github.com/CassioFelippe/java-utils</url>
+	</scm>
+
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Cassio Luis Zamignan Forte Felippe</name>
+			<email>cassioluis12@gmail.com</email>
+			<organization>Independent</organization>
+			<organizationUrl>https://github.com/CassioFelippe</organizationUrl>
+		</developer>
+	</developers>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -26,7 +50,7 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.github.mongobee</groupId>
 			<artifactId>mongobee</artifactId>
@@ -38,7 +62,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.mongodb</groupId>
 			<artifactId>mongo-java-driver</artifactId>
@@ -92,4 +116,15 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>http://domain:port/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>http://domain:port/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

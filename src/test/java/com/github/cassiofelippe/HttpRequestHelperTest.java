@@ -1,6 +1,6 @@
-package com.forte.utils;
+package com.github.cassiofelippe;
 
-import static com.forte.utils.HttpRequestHelper.run;
+import static com.github.cassiofelippe.HttpRequestHelper.run;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
