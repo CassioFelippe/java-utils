@@ -1,5 +1,6 @@
 package com.github.cassiofelippe;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.util.HashMap;
@@ -61,6 +62,6 @@ public class FipeTest {
 		
 		final String response = Fipe.execute(params).body();
 		
-		assertTrue(BsonArray.parse(response).size() > 0);
+		assertEquals("Corsa Hat. Maxx 1.4 8V ECONOFLEX 5p", Document.parse(response).getString("Modelo"));
 	}
 }
